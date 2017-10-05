@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/mermaid/dist/mermaid.min.css">
+</head>
+<body>
+<div class="mermaid">
+  graph TD;
+    A-->B;
+</div>
+<div class="mermaid">
+  graph LR;
+    A>開始] --> |"順調"|B[終わって暇];
+    A -.-> C{Dはよ};
+    A --> D(実装が遅れた);
+    B --> F;
+    C --> F;
+    D ==> E((Dはよ));
+    D ==> C;
+    E --> F{>>デスマ<<};
+    click B "https://www.bing.com/" "リンクもはれる";
+</div>
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js" charset="UTF-8"></script>
+<script>
+  mermaid.initialize({
+    startOnLoad:true
+  });
+</script>
+</body>
+</html>
